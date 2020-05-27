@@ -16,6 +16,6 @@
 **Job-1**
 * In The job first we are pulling the data from Mlops-Project Directory . for this we are use the git plugin.
 * Downloaded data we are cp into one folder.
-![job1]()
+![job1](https://github.com/Sumit-Rasal/MLops-Project/tree/master/screenshot/Screenshot from 2020-05-25 18-55-34.png)
 
 
