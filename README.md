@@ -1,7 +1,7 @@
 # MLops-Project
 ## Here I did the Integration of machine leaning and devops.
 ### problem Statement
----
+
 > 1. Create container image that’s has Python3 and Keras or numpy  installed  using dockerfile 
 > 2. When we launch this image, it should automatically starts train the model in the container.
 > 3. Create a job chain of **job1, job2, job3, job4** and **job5** using build pipeline plugin in Jenkins 
@@ -10,5 +10,6 @@
 > 6. **Job3** : Train your model and predict accuracy or metrics.
 > 7. **Job4**: if metrics accuracy is less than 80%  , then tweak the machine learning model architecture.
 > 8. **Job5**: Retrain the model or notify that the best model is being created
-> 9. Create One extra job job6 for monitor : If container where app is running. fails due to any reason then this job should > > automatically start the container again from where the last trained model left
+> 9. Create One extra job job6 for monitor : If container where app is running. fails due to any reason then this job should 
+> automatically start the container again from where the last trained model left
 ---
