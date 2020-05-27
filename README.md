@@ -14,5 +14,7 @@
 > automatically start the container again from where the last trained model left
 
 **Job-1**
-* In The job first we are pulling the data from Mlops Project Directory .
+* In The job first we are pulling the data from Mlops Project Directory . for this we are use the git plugin.
+* Downloaded data we are cp into one folder.
+
 
