@@ -14,5 +14,5 @@
 > automatically start the container again from where the last trained model left
 
 **Job-1**
-   In the Job 
+In The job first we are pulling the data from Mlops Project Directory .
 
