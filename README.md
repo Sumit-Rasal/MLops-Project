@@ -1,2 +1,2 @@
-## MLops-Project
-# Here i did the Integration of machine leaning and devops.
+# MLops-Project
+## Here I did the Integration of machine leaning and devops.
