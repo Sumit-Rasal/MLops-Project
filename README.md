@@ -13,3 +13,6 @@
 > 9. Create One extra job job6 for monitor : If container where app is running. fails due to any reason then this job should 
 > automatically start the container again from where the last trained model left
 
+**Job-1**
+   In the Job 
+
