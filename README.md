@@ -34,11 +34,17 @@
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-40-00.png)
 
+* The code we are using for Storing accuracy Data in the file are given below.
+
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2016-57-36.png)
+
+
 **Job-4**
 * Here we are checking the accuracy.If the accuracy less than 90% then we are tweak the machine learning model architecture.
 * In the tweak we are  _adding the convolution layer_ , also increase the _epoch_
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-44-51.png)
+
 
 
 
