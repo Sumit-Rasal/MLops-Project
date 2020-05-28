@@ -23,11 +23,26 @@
 
 ![job-1](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-25%2018-55-38.png)
 
+* Code
+```
+sudo cp -v -r -f * /root/Desktop/mlops-project 
+```
+
 **Job-2**
 * In the Job-2 we have to Find out which type of code it is.( code may be of - CNN, simple python code). For this we are using the grep command and retriving the **Conv2D** word because Conv2D is the unique word alwayes use in the CNN.
 * After detecting the code,launching the respective container. They have all software. For launching the code we are using the Docker run command.
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-39-06.png)
+* Code
+
+```
+if [ `sudo cat /root/Desktop/mlops-project/FashionMNIST-1.py | grep -ow -m 1 "Conv2D"` == "Conv2D" ]
+then
+sudo docker run -itd -v /root/Desktop/mlops-project/:/root/mlops/ --name mlops sumit301/ml:v1
+else
+echo "This Job is ment For the CNN model Please check The Model"
+fi
+```
 
 **Job-3**
 * We are Training the model and storing the accuracy value in a one file. For Training purpose we are use the exec concept of docker.
@@ -37,13 +52,31 @@
 * The code we are using for Storing accuracy Data in the file are given below.
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2016-57-36.png)
-
-
+* code
+```
+sudo docker exec mlops python3 /root/mlops/FashionMNIST-1.py
+```
 **Job-4**
 * Here we are checking the accuracy.If the accuracy less than 90% then we are tweak the machine learning model architecture.
 * In the tweak we are  _adding the convolution layer_ , also increase the _epoch_
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-44-51.png)
+* code
+```
+if [ ` sudo cat /root/Desktop/mlops-project/sumit.txt | grep "^[0-9]*$"` -lt 90 ]
+then
+sudo docker exec mlops python3 /root/mlops/FashionMNIST-2.py
+else
+echo ''
+fi
+
+if [ ` sudo cat /root/Desktop/mlops-project/sumit.txt | grep "^[0-9]*$"` -lt 90 ]
+then
+sudo docker exec mlops python3 /root/mlops/FashionMNIST-3.py
+else
+echo 'Model is good'
+fi
+```
 
 **Job-5**
 * We are reading the file where we are store the accuracy In my case I store in the sumit.txt file.
@@ -58,8 +91,8 @@ How to Configure for Email Notification
 * Here we are monitoring the container. For monitoring we are using while loop.
 * while Loop monitoring the container each and very second.
 
-![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-31-35.png)
-
+![job-6](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-31-35.png)
+* Code 
 ``` 
 while true;
 do
