@@ -56,6 +56,10 @@ fi
 ```
 sudo docker exec mlops python3 /root/mlops/FashionMNIST-1.py
 ```
+* Output Of Job-3
+
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2010-31-09.png)
+
 **Job-4**
 * Here we are checking the accuracy.If the accuracy less than 90% then we are tweak the machine learning model architecture.
 * In the tweak we are  _adding the convolution layer_ , also increase the _epoch_
@@ -77,6 +81,8 @@ else
 echo 'Model is good'
 fi
 ```
+* Output of Job-4
+
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2010-52-32.png)
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2010-56-53.png)
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2011-02-11.png)
