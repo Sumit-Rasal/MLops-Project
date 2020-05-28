@@ -49,6 +49,35 @@
 * We are reading the file where we are store the accuracy In my case I store in the sumit.txt file.
 * After Reading the File. We are send the Notification. For sending The Notification we are using the Email Notification  plugin In the Jenkins
 
+How to Configure for Email Notification
+![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-32-28.png)
+
+![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-39-16.png).
+
+**Job-6**
+* Here we are monitoring the container. For monitoring we are using while loop.
+* while Loop monitoring the container each and very second.
+
+![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-31-35.png)
+
+``` while true;
+do
+if [ `sudo docker ps | sudo grep -ow mlops` == "mlops" ]
+then
+echo ''
+else
+sudo docker run -itd -v /root/Desktop/mlops-project/:/root/mlops/ --name mlops sumit301/ml:v1
+fi
+done
+```
+* Output of The last Command.
+
+![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-20-21.png)
+
+
+
+
+
 
 
 
