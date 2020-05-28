@@ -19,5 +19,17 @@
 * In The job first we are pulling the data from Mlops-Project Directory . for this we are use the git plugin.
 * Downloaded data we are cp into one folder.
 ![job1](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-25%2018-55-34.png)
+![job-1](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-25%2018-55-38.png)
+
+**Job-2**
+* In the Job-2 we have to Find out which type of code it is.( code may be of - CNN, simple python code) : For this we are using the grep command and retriving the **Conv2D** word because Conv2D is the unique word alwayes use in the CNN.
+* After detecting the code launching the respective container. They have all software. : For launching the code we are using the Docker command.
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-39-06.png)
+
+**Job-3**
+* We are Training the model and storing the accuracy value in a one file. : For Training purpose we are use the exec concept of docker.
+
+
+
 
 
