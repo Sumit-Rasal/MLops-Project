@@ -60,7 +60,8 @@ How to Configure for Email Notification
 
 ![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-31-35.png)
 
-``` while true;
+``` 
+while true;
 do
 if [ `sudo docker ps | sudo grep -ow mlops` == "mlops" ]
 then
@@ -70,9 +71,12 @@ sudo docker run -itd -v /root/Desktop/mlops-project/:/root/mlops/ --name mlops s
 fi
 done
 ```
-* Output of The last Command.
+* Output of The Job.
 
 ![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-20-21.png)
+
+#### Grapical View of Jenkins Delivery pipline.
+
 
 
 
