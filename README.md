@@ -45,6 +45,12 @@
 
 ![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-26%2014-44-51.png)
 
+**Job-5**
+* We are reading the file where we are store the accuracy In my case I store in the sumit.txt file.
+* After Reading the File. We are send the Notification. For sending The Notification we are using the Email Notification  plugin In the Jenkins
+
+
+
 
 
 
