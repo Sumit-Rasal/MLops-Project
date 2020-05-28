@@ -77,6 +77,9 @@ else
 echo 'Model is good'
 fi
 ```
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2010-52-32.png)
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2010-56-53.png)
+![job2](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2011-02-11.png)
 
 **Job-5**
 * We are reading the file where we are store the accuracy In my case I store in the sumit.txt file.
@@ -109,6 +112,11 @@ done
 ![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2009-20-21.png)
 
 #### Grapical View of Jenkins Delivery pipline.
+
+![job-5](https://github.com/Sumit-Rasal/MLops-Project/blob/master/screenshot/Screenshot%20from%202020-05-28%2011-03-47.png)
+
+
+
 
 
 
